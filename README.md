@@ -54,6 +54,7 @@ python run.py
 This is an early version of VectorShield, and it's under continuous development. Contributions, feedback, and ideas are highly encouraged! Whether you're fixing bugs, adding features, or improving documentation, your input is valuable.
 
 ### License
-This project is licensed under the terms specified in the LICENSE file.
+This project is licensed under the terms specified in the [LICENSE](https://github.com/bayegaspard/VectorShield/blob/main/LICENSE)
+ file.
 
 
