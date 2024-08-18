@@ -1,0 +1,5 @@
+flask
+pdfplumber
+markdown
+beautifulsoup4
+beautifulsoup4
