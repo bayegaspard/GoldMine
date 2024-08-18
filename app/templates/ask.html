@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js"></script>
+    <script>
+        function showSpinner() {
+            document.getElementById('spinner').style.display = 'block';
+        }
+
+        function hideSpinner() {
+            document.getElementById('spinner').style.display = 'none';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                showSpinner();
+            });
+
+            const md = window.markdownit();
+            document.querySelectorAll('.markdown-content').forEach(function(el) {
+                el.innerHTML = md.render(el.textContent);
+                Prism.highlightAllUnder(el);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box">
+            {% for entry in conversation %}
+                <div class="chat user">
+                    <div class="message">{{ entry.question }}</div>
+                </div>
+                <div class="chat bot">
+                    <div class="message markdown-content">{{ entry.response }}</div>
+                </div>
+            {% endfor %}
+        </div>
+        <form action="{{ url_for('ask_question') }}" method="post">
+            <input type="text" name="question" placeholder="Ask a question" required>
+            <input type="submit" value="Ask">
+        </form>
+        <div id="spinner" class="spinner"></div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
