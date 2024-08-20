@@ -27,6 +27,7 @@ VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, desi
 - **Flask**: Web framework to serve the application.
 - **Various Python Packages**: Specified in `requirements.txt`.
 - **Chroma requires SQLite > 3.35**, if you encounter issues with having too low of a SQLite version please try following steps to fix it using this [link](https://docs.trychroma.com/troubleshooting#sqlite)
+
 ## Installation and Setup
 
 Follow these steps to set up the VectorShield application:
@@ -45,7 +46,8 @@ On Windows: conda activate venv
 On macOS/Linux: conda activate venv
 
 If you don't have conda installed, you can follow this [link](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) on how to install conda.
-3. **Install Dependencies:***
+
+3. **Install Dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
