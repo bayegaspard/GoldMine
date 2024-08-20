@@ -1,5 +1,12 @@
-flask
-pdfplumber
-markdown
-beautifulsoup4
-beautifulsoup4
+Flask==2.2.5
+Flask-Session==0.4.0
+pdfplumber==0.7.5
+beautifulsoup4==4.11.1
+markdown==3.3.7
+python-docx==0.8.11
+Werkzeug==2.2.2
+langchain_community==0.2.0
+langchain_chroma
+langchain_core
+langchain_text_splitters
+Flask-Session
