@@ -41,9 +41,10 @@ Follow these steps to set up the VectorShield application:
   ```bash
   conda create -n venv python=3.10 anaconda~
   ```
+
 Activate the Virtual Environment:
-On Windows: conda activate venv
-On macOS/Linux: conda activate venv
+- On Windows: `conda activate venv`
+- On macOS/Linux: `conda activate venv`
 
 If you don't have conda installed, you can follow this [link](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) on how to install conda.
 
