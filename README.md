@@ -53,8 +53,9 @@ If you don't have conda installed, you can follow this [link](https://docs.conda
 pip install -r requirements.txt
 ```
 4. **Run the Application:**
+```bash
 python run.py
-
+```
 ### Contribution
 This is an early version of VectorShield, and it's under continuous development. Contributions, feedback, and ideas are highly encouraged! Whether you're fixing bugs, adding features, or improving documentation, your input is valuable.
 
