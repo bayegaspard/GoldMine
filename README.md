@@ -7,9 +7,9 @@ VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, desi
 
 ## Features
 
-- **Multi-Document Support**: Upload and process multiple file types, including PDFs, HTML, Markdown, and plain text.
+- **Multi-Document Support**: Upload and process multiple file types, including PDFs, Docx, HTML, Markdown, and plain text.
 - **Generative AI Integration**: Powered by the Ollama model to generate intelligent responses based on your document corpus.
-- **RAG (Retrieval-Augmented Generation)**: Combines document retrieval with generative AI to provide contextually relevant answers.
+- **RAG (Retrieval-Augmented Generation)** combines document retrieval with generative AI to provide contextually relevant answers.
 - **User-Friendly Interface**: Simple web interface to upload documents and ask questions.
 
 ## Supported File Types
@@ -17,16 +17,17 @@ VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, desi
 - **PDF** (.pdf)
 - **HTML** (.html)
 - **Markdown** (.md)
+- **Docx** (.docx)
 - **Plain Text** (.txt)
 
 ## Requirements
 
 - **Python 3.10+**
-- **Ollama**: Generative AI model used for generating answers.
-- **LangChain**: For handling RAG (Retrieval-Augmented Generation) processes.
+- **Ollama**: Framework used to run the generative AI. In this project, we use llama3. If you don't have Ollama installed, use this [link](https://ollama.com/download) to install Ollama on Windows and Linux.
+- **LangChain**: This handles RAG (Retrieval-Augmented Generation) processes.
 - **Flask**: Web framework to serve the application.
 - **Various Python Packages**: Specified in `requirements.txt`.
-- **Chroma requires SQLite > 3.35**, if you encounter issues with having too low of a SQLite version please try following steps to fix it using this [link](https://docs.trychroma.com/troubleshooting#sqlite)
+- **Chroma requires SQLite > 3.35**, if you encounter issues with having too low of a SQLite version, please try following steps to fix it using this [link](https://docs.trychroma.com/troubleshooting#sqlite)
 
 ## Installation and Setup
 
