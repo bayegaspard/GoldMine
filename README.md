@@ -21,12 +21,12 @@ VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, desi
 
 ## Requirements
 
-- **Python 3.8+**
+- **Python 3.10+**
 - **Ollama**: Generative AI model used for generating answers.
 - **LangChain**: For handling RAG (Retrieval-Augmented Generation) processes.
 - **Flask**: Web framework to serve the application.
 - **Various Python Packages**: Specified in `requirements.txt`.
-
+- **Chroma requires SQLite > 3.35**, if you encounter issues with having too low of a SQLite version please try following steps to fix it using this [link](https://docs.trychroma.com/troubleshooting#sqlite)
 ## Installation and Setup
 
 Follow these steps to set up the VectorShield application:
