@@ -9,8 +9,8 @@ from langchain_chroma import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from werkzeug.utils import secure_filename 
 
-UPLOAD_DIRECTORY = "/tmp/uploaded_documents"
-PERSIST_DIRECTORY = "/tmp/chroma_persist"
+UPLOAD_DIRECTORY = "/tmp/uploaded_documents1"
+PERSIST_DIRECTORY = "/tmp/chroma_persist1"
 
 class LLMModel:
     def __init__(self, model_name="llama3"):

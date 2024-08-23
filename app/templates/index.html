@@ -12,8 +12,24 @@
         <p>Your AI-powered Red Teaming Co-Pilot</p>
         <div class="action-buttons">
             <a href="{{ url_for('upload_files') }}" class="btn">Upload Documents</a>
-            <a href="{{ url_for('ask_question') }}" class="btn">Ask a Question</a>
+            <a href="#" class="btn btn-disabled">Ask a Question</a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const askButton = document.querySelector('.btn-disabled');
+            const uploadButton = document.querySelector('.btn[href="{{ url_for('upload_files') }}"]');
+            
+            if (!uploadButton) {
+                askButton.classList.add('btn-disabled');
+                askButton.href = '#';
+                askButton.textContent = 'Upload Documents First';
+            } else {
+                askButton.href = "{{ url_for('ask_question') }}";
+                askButton.classList.remove('btn-disabled');
+            }
+        });
+    </script>
 </body>
 </html>

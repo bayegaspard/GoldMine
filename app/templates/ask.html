@@ -11,19 +11,20 @@
         <h2>Ask Your AI Co-Pilot</h2>
         <div class="chat-box">
             {% for item in conversation %}
-            <div class="chat {% if loop.index % 2 == 0 %}user{% else %}bot{% endif %}">
+            <div class="chat user">
                 <div class="message">{{ item.question }}</div>
             </div>
-            <div class="chat {% if loop.index % 2 == 0 %}bot{% else %}user{% endif %}">
+            <div class="chat bot">
                 <div class="message">{{ item.response }}</div>
             </div>
             {% endfor %}
         </div>
         <form method="POST" action="{{ url_for('ask_question') }}">
-            <input type="text" name="question" placeholder="Type your question here...">
+            <input type="text" name="question" placeholder="Type your question here..." required>
             <input type="submit" value="Ask">
             <div class="spinner" id="spinner"></div>
         </form>
+
     </div>
 
     <script>
