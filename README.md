@@ -57,8 +57,23 @@ pip install -r requirements.txt
 ```bash
 python run.py
 ```
-### Contribution
-This is an early version of VectorShield, and it's under continuous development. Contributions, feedback, and ideas are highly encouraged! Whether you're fixing bugs, adding features, or improving documentation, your input is valuable.
+
+# Proof of Concept (PoC) - Not for Production Use
+
+**Disclaimer:**  
+This project is currently a Proof of Concept (PoC) and has not been thoroughly tested for production-level deployment. While it showcases the core functionality and potential of the idea, it may contain bugs, lack full feature coverage, and may not yet meet the robustness required for production environments.
+
+**Call for Contributors:**  
+We believe in the potential of this project and with the support of the community, we can refine and enhance it to reach production-level quality. Your contributions, whether through code, testing, documentation, or ideas, are highly valuable and appreciated. Together, we can evolve this project into a reliable, production-ready solution.
+
+**How to Contribute:**
+- Fork the repository and create a new branch for your contributions.
+- Submit pull requests for bug fixes, features, or improvements.
+- Participate in discussions and suggest enhancements.
+- Share your testing results and help us identify areas for improvement.
+
+Thank you for your interest and support in making this project a success!
+
 
 ### License
 This project is licensed under the terms specified in the [LICENSE](https://github.com/bayegaspard/VectorShield/blob/main/LICENSE)
