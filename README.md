@@ -59,7 +59,7 @@ python run.py
 ```
 
 #### Proof of Concept (PoC) - May contain bugs
-![POC]([URL_or_path_to_image](https://github.com/bayegaspard/GoldMine/blob/main/poc-pics/poc.png))
+![POC](https://github.com/bayegaspard/GoldMine/blob/main/poc-pics/poc.png)
 
 **Disclaimer:**  
 This project is under development, a Proof of Concept (PoC), and has not been thoroughly tested for production-level deployment. While it showcases the idea's core functionality and potential, it may contain bugs, lack full feature coverage, and still need to meet the robustness required for production environments.
