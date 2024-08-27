@@ -3,7 +3,7 @@
 ### DEFCON32 TALK
 **Leverage Gen-AI+RAG to stay ahead in the cyber battle! Building Your Red-Teaming Co-Pilot.**
 
-VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, designed to enhance red-teaming operations by leveraging Generative AI combined with Retrieval-Augmented Generation (RAG). This early version supports various document types and is under constant development. Contributions are welcome!
+GoldMine is a proof-of-concept (PoC) application from my DEFCON32 talk. It is designed to enhance red-teaming operations by leveraging Generative AI combined with Retrieval-Augmented Generation (RAG). This early version supports various document types and is under constant development. Contributions are welcome!
 
 ## Features
 
@@ -23,7 +23,7 @@ VectorShield is a proof-of-concept (PoC) application from my DEFCON32 talk, desi
 ## Requirements
 
 - **Python 3.10+**
-- **Ollama**: Framework used to run the generative AI. In this project, we use llama3. If you don't have Ollama installed, use this [link](https://ollama.com/download) to install Ollama on Windows and Linux.
+- **Ollama**: Framework used to run the generative AI. In this project, we use llama3. If you don't have Ollama installed, you can use this [link](https://ollama.com/download) to install Ollama on Windows and Linux.
 - **LangChain**: This handles RAG (Retrieval-Augmented Generation) processes.
 - **Flask**: Web framework to serve the application.
 - **Various Python Packages**: Specified in `requirements.txt`.
@@ -58,19 +58,19 @@ pip install -r requirements.txt
 python run.py
 ```
 
-# Proof of Concept (PoC) - Not for Production Use
+#### Proof of Concept (PoC) - May contain bugs
 
 **Disclaimer:**  
-This project is currently a Proof of Concept (PoC) and has not been thoroughly tested for production-level deployment. While it showcases the core functionality and potential of the idea, it may contain bugs, lack full feature coverage, and may not yet meet the robustness required for production environments.
+This project is under development, a Proof of Concept (PoC), and has not been thoroughly tested for production-level deployment. While it showcases the idea's core functionality and potential, it may contain bugs, lack full feature coverage, and still need to meet the robustness required for production environments.
 
 **Call for Contributors:**  
-We believe in the potential of this project and with the support of the community, we can refine and enhance it to reach production-level quality. Your contributions, whether through code, testing, documentation, or ideas, are highly valuable and appreciated. Together, we can evolve this project into a reliable, production-ready solution.
+We believe in this project's potential, and with the community's support, we can refine and enhance it to reach production-level quality. Your contributions, whether through code, testing, documentation, or ideas, are highly valuable and appreciated. Together, we can evolve this project into a reliable, production-ready solution.
 
 **How to Contribute:**
 - Fork the repository and create a new branch for your contributions.
 - Submit pull requests for bug fixes, features, or improvements.
 - Participate in discussions and suggest enhancements.
-- Share your testing results and help us identify areas for improvement.
+- Could you share your testing results and help us identify areas for improvement?
 
 Thank you for your interest and support in making this project a success!
 
