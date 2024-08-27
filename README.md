@@ -58,7 +58,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-#### Proof of Concept (PoC) - May contain bugs
+#### Proof of Concept (PoC) 
 ![POC](https://github.com/bayegaspard/GoldMine/blob/main/poc-pics/poc.png)
 
 **Disclaimer:**  
