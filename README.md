@@ -1,4 +1,4 @@
-# VectorShield
+# GoldMine
 
 ### DEFCON32 TALK
 **Leverage Gen-AI+RAG to stay ahead in the cyber battle! Building Your Red-Teaming Co-Pilot.**
